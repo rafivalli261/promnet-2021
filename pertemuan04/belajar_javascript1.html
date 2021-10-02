@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Belajar Javascript dan DOM</title>
-	<script>
-		function muFunction() {
-			// body...
-			document.getElementById("demo").innerHTML = "Paragraph changed.";
-		}
-	</script>
-</head>
-<body>
-	<h2>Apa yang Javascript dapat lakukan?</h2>
-	<p>JavaScript dapat merubah nilai atttibut pada HTML</p>
-
-
-	<button onclick="document.getElementById('tombol').src='lamp_on.jpg'">Turn on the light</button>
-	<img src="lamp_off.png" alt="" id="tombol" style="width: 300px;">
-	<button onclick="document.getElementById('tombol').src='lamp_off.png'" >Turn off the light</button>
-
-	<div class="lat1">
-		<p id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, saepe?</p>
-		<button onclick="document.getElementById('demo').style.fontSize='35px'">Ubah Style</button>
-		<button onclick="document.getElementById('demo').style.display='none'">Hapus!</button>
-	</div>
-	<button type="button" onclick="myFunction()">Try it</button>
-	<div class="coba3">
-		<p id="krons"></p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Belajar Javascript dan DOM</title>
 		<script>
-			let x = 6 ;
-			var b = 8 ;
-			document.getElementById("krons").innerHTML = x;
+			function myFunction() {
+				// body...
+				document.getElementById("pemo").innerHTML = "Paragraph changed.";
+			}
 		</script>
-	</div>
+	</head>
+	<body>
+		<!-- entah kenapa ID tidak suka S -->
+		<h2>Apa yang Javascript dapat lakukan?</h2>
+		<p>JavaScript dapat merubah nilai atttibut pada HTML</p>
 
-</body>
+		<button onclick="document.getElementById('tombol').src='lamp_on.jpg'">Turn on the light</button>
+		<img src="lamp_off.png" alt="" id="tombol" style="width: 300px" />
+		<button onclick="document.getElementById('tombol').src='lamp_off.png'">Turn off the light</button>
+		<div class="lat1">
+			<p id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, saepe?</p>
+			<button onclick="document.getElementById('demo').style.fontSize='35px'">Ubah Style</button>
+			<button onclick="document.getElementById('demo').style.display='none'">Hapus!</button>
+			<button onclick="document.getElementById('demo').style.display='initial';">Tampil!</button>
+		</div>
+		<br />
+		<div id="pemo">Simsalabim Ini berubah</div>
+		<button type="button" onclick="myFunction()">Try it</button>
+		<br /><br /><br /><br /><br />
+		<div class="maraton">
+			<label for="angka1">Masukkan Angka 1 :</label>
+			<input id="angka1" /><br />
+			<label for="angka2">Masukkan Angka 1 :</label>
+			<input id="angka2" /><br />
+			<button onclick="pertambahan()">gass</button>
+			<h4 id="hasil"></h4>
+		</div>
+		<div class="coba3">
+			<p id="krons"></p>
+			<script>
+				let x = 6;
+				var b = 8;
+				document.getElementById("krons").innerHTML = x;
+				function pertambahan() {
+					let a = document.getElementById("angka1").value;
+					let b = document.getElementById("angka2").value;
+					var jumlah = parseInt(angka1.value) + parseInt(angka2.value);
+					document.getElementById("hasil").innerHTML = "Hasil = " + parseInt(jumlah);
+				}
+			</script>
+		</div>
+	</body>
 </html>
