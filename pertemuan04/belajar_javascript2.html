@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar Javascript 2</title>
+</head>
+<body>
+	<h1>Halaman Web saya</h1>
+	<p >Paragraph saya Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam laboriosam magnam fuga officia nam adipisci omnis nemo beatae, animi possimus tempora debitis ut quibusdam sit aperiam veniam? Distinctio perferendis, illo ad inventore non, nemo laborum sed placeat aliquam natus, repellat. Praesentium quae possimus accusantium, voluptatem numquam alias mollitia excepturi, doloribus consectetur soluta, sapiente vero quisquam earum sunt laudantium molestiae beatae quidem? Id quibusdam repellendus aperiam cumque nemo explicabo harum. Ducimus dolorem, impedit nobis ipsam perferendis ut fugiat nihil saepe sit eligendi animi minus laborum optio aspernatur nesciunt, consequuntur delectus odit harum velit. Nam, voluptatibus mollitia eaque vitae aut totam!</p>
+	<p id="demo"></p>
+	<script>
+		document.getElementById("demo").innerHTML = 5 + 6; //menuliskan output pada halaman web/html, dengan baris baru setelahnya, mengubah elemen yang dikenakan id yg bersangkutan
+		//document.write(5+6); //menuliskan output pada halaman web/html, tanpa baris baru
+		//window.alert(5+6); //menuliskan output pada kotak kecil yang muncul diatas halaman web
+		//console.log(5+6);//menuliskan output hanya pada konsol, tidak tampil pada halaman html
+	</script>
+	<!-- mencetak dalam arti yg sebenarnya -->
+	<!-- <button onclick="window.print(5+6)">Cetak</button> -->
+	
+	<!-- mencetak dokumen baru pada tab yang sama -->
+	<button type="button" onclick="document.write(5+6)">Cetak</button> 
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	background-image: url(https://www.fodors.com/wp-content/uploads/2019/04/TraditionalfoodsinJava__HERO_shutterstock_1161085942.jpg);
+	background-size: cover;
+}
+
+.main{
+	width: 1000px;
+	font: 14px "halvetica", sans-serif;
+	margin: 20px auto;
+	/*background-color: #eaeaea;*/
+	box-sizing: border-box;
+}
+
+.header{
+	height: 200px;
+	position: relative;
+	box-sizing: border-box;
+	background-image: url(https://asset.kompas.com/crops/YmldwO5RMtasZ23KGzTDtU8liYI=/0x0:780x520/780x390/data/photo/2021/02/25/6037b6fb51bdd.jpg);
+	background-size: cover;
+	background-position: 0 -30px;
+}
+.jumbotron{
+	position: absolute;
+	background-color: black;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap');
+.header, .jumbotron{
+	border-radius: 13px 13px 0 0;
+}
+.header h1{
+	position: absolute;
+	color: white;
+	font-size: 40px;
+	padding: 20px;
+	font-family: 'Yantramanav Light 300', sans-serif;
+	bottom: 18px;
+	left: 0;
+}
+
+.icon{
+	position: relative;
+}
+
+.favicon{
+	float: right;
+	padding: 9px 10px 0 0;
+}
+
+.header p{
+	position: absolute;
+	color: white;
+	font-family: 'Yantramanav', sans-serif;
+	/*text-align: center;*/
+	padding: 20px;
+	bottom: 0;
+	left: 0;
+	font-style: italic;
+}
+
+.daftar_isi{
+	font-size: 16px;
+	font-family: halvetica, sans-serif;
+	background-color: #eee;
+	border-radius: 2px;
+}
+
+.daftar_isi ul li{
+	padding: 15px;
+	display: inline-block;
+	position: relative;
+	color: black;
+
+}
+.daftar_isi ul li a{
+	text-decoration: none;
+	text-align: center;
+	margin-right: 7px;
+	color: black;
+	font-family: 'Didact Gothic', sans-serif;
+
+}
+
+.daftar_isi ul li a:hover{
+	color: white;
+	background-color: lightskyblue;
+	padding: 8px 0;
+}
+
+/*.daftar_isi ul li:hover{
+	text-decoration: none;
+	color: white;
+	background-color: lightskyblue;
+}*/
+
+.container{
+	background-color: #fff;
+	min-height: 700px;
+	overflow: auto;
+}
+
+.container h2{
+	font-size: 24px;
+	margin: 7px;
+	padding: 5px;
+	text-align: center;
+	font-family: "Yantramanav Bold 700", sans-serif;
+}
+
+.container p{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.isi{
+	box-sizing: border-box;
+	width: 317px;
+	background-color: white;
+	padding: 10px;
+	margin: 8px;
+	text-align: center;
+	position: relative;
+	font-family: 'Didact Gothic', sans-serif;
+	float: left;
+}
+
+.isi img{
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  opacity: 0.8;
+}
+
+.isi:hover .overlay2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.nama_produk {
+	
+  white-space: nowrap; 
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.footer{
+	padding: 10px;
+	background-color: #999;
+	color: white;
+	font-size: 20px;
+	font-family: serif;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+

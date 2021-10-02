@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar Javascript 3</title>
+</head>
+<body>
+	<h2>Javascript Validation</h2>
+	<p>Silakan masukkan angka dari 1 sampai 10</p>
+	<input id="numb">
+	<button type="button" onclick="myFunction()">Submit</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction(){
+			//menddapat nilai dari field id="numb"
+			let x = document.getElementById("numb").value;
+			//jika x bukan angka antara 1 - 100
+			let text;
+			//insNaN(x) adalah kosong atau x<1 atau x>10
+			if (isNaN(x) || x < 1 || x > 10) {
+				text = "Input not valid";
+			}
+			else{
+				text = "Input OK";
+			}
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+</body>
+</html>

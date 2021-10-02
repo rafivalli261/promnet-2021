@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pertemuan 2 - 17 September 2021</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: dimgray;">
+	<!-- MENCOBA COBA -->
+	<div style="width: 800px; margin: 20px auto; font-family: 'Varela Round',sans-serif; background-color: lightgrey;">
+		<form style="padding: 20px; box-sizing: content-box;">
+				<fieldset style="margin: 20px 0;">
+					<legend>Biodata</legend>
+					<table>
+				<tr>
+					<td><label for="nuama">Nama : </label></td>
+					<td><input type="text" id="nuama"></td>
+				</tr>
+				<tr>
+					<td><label for="kelamin">Jenis Kelamin : </label></td>
+					<td>
+						<label for="laki">Laki-Laki</label>
+						<input type="radio" id="laki" name="kel">
+						<br>
+						<label for="perem">Perempuan </label>
+						<input type="radio" id="perem" name="kel">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="tglhr">Tanggal Lahir : </label></td>
+					<td><input type="date" id="tglhr"></td>
+				</tr>
+				<tr>
+					<td><label for="alamat">Alamat : </label></td>
+					<td><textarea id="alamat" cols="20" rows="7"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email : </label></td>
+					<td><input type="email" id="email" name="email"></td>
+				</tr>
+				<tr>
+					<td><label for="HP">No HP : </label></td>
+					<td><input type="text" id="HP"></td>
+				</tr>
+						
+					</table>
+				</fieldset>
+				
+				<fieldset style="margin: 20px 0;">
+					<legend>Pendidikan</legend>
+					<table>
+						<tr>
+					<td><label for="ASL">Asal Sekolah : </label></td>
+					<td><input type="text" id="ASL"></td>
+				</tr>
+				<tr>
+					<td><label for="nilai">Nilai Ujian Sekolah : </label></td>
+					<td><input type="text" id="nilai"></td>
+				</tr>
+					</table>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Orang Tua</legend>
+					<table>
+				<tr>
+					<td><label for="ayah">Nama Ayah : </label></td>
+					<td><input type="text" id="ayah"></td>
+				</tr>
+				<tr>
+					<td><label for="ibu">Nama Ibu : </label></td>
+					<td><input type="text" id="ibu"></td>
+				</tr>
+				<tr>
+					<td><label for="alamat_ort">Alamat Orang Tua : </label></td>
+					<td><textarea id="alamat_ort" cols="20" rows="7"></textarea></td>
+				</tr>
+					</table>
+				</fieldset>
+				<input type="submit" name="kumpulkan" value="GASS" style="margin: 20px;">
+		</form>
+	</div>
+</body>
+</html>

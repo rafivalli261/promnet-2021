@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Arial, sans-serif;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+		/*Header*/
+		.header{
+			padding: 30px;
+			text-align: center;
+			background: white;
+			background-image: url(https://www.pasundanekspres.co/wp-content/uploads/2020/02/024372700_1540278327-shutterstock_789397027.jpg);
+			background-size: cover;
+			background-position: 0 -80px;
+			position: relative;
+			
+
+		}
+		.header h1,.header p{
+			position: relative;
+			color: floralwhite;
+		}
+		.overlay{
+			width: 100%;
+			height: 100%;
+			opacity: 0.4;
+			background-color: black;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.header h1{
+			font-size: 50px;
+		}
+		/*style the top nav bar*/
+		.topnav{
+			overflow: hidden;
+			background-color: #333;
+		}
+		/*style the topnav link*/
+		.topnav a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		/*change color on hover*/
+		.topnav a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		/*create 2 unequal column that floats next to each other*/
+		/*left column*/
+		.leftcolumn{
+			float: left;
+			width: 75%;
+			text-align: justify;
+			text-indent: 50px;
+		}
+		/*right column*/
+		.rightcolumn{
+			float: left;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+		/*fake image*/
+		.fakeimg{
+			background-color: #aaa;
+			width: 100%;
+			padding: 20px;
+		}
+
+		/*add a card effect for artikel*/
+		.card{
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+		/*.card img{
+			width: 100%;
+			height: 250px;
+			padding: 10px;
+			object-fit: cover;
+		}*/
+		.card .mage{
+			width: 100%;
+			height: 250px;
+			padding: 10px;
+			object-fit: cover;
+
+		}
+		/*clear floats after the column*/
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		/*footer*/
+		.footer{
+			padding: 10px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+		/*responsive layout*/
+		@media screen and (max-width: 800px) {
+			.leftcolumn, .rightcolumn{
+				width: 100%;
+				padding: 0;
+			}
+		}
+		@media screen and (max-width: 400px) {
+			.topnav a {
+				float: none;
+				width: 100%;
+			}
+		}
+		.rightcolumn .card .mage{
+			height: 400px;
+			border-radius: 50%;
+		}
+		.fakeimg1{
+			background-image: url(https://t-2.tstatic.net/tribunmanadotravel/foto/bank/images/tinutuan-11.jpg);
+			background-size: cover;
+			height: 100px;
+			margin-bottom: 3px;
+		}
+		.fakeimg2{
+			background-image: url(https://asset.kompas.com/crops/dcFNlU98F0bRk5ZrSrV5PVivpc8=/129x0:858x486/750x500/data/photo/2021/05/15/609fbcd2ed6d9.jpg);
+			background-size: cover;
+			height: 100px;
+			margin-bottom: 3px;
+		}
+		.fakeimg3{
+			background-image: url(https://cdn-2.tstatic.net/tribunnews/foto/bank/images/apa-itu-jalangkote1.jpg);
+			background-size: cover;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="overlay"></div>
+		<h1>Waroeng Nusantara</h1>
+		<p>Tempat artikel seputar makanan khas daerah</p>
+		
+	</div>
+	<div class="topnav">
+		<a href="#">Daftar Isi </a>
+		<a href="#">Resep Masakan </a>
+		<a href="#">Contact Me </a>
+		<a href="#">Tentang Penulis </a>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>ILABULO</h2>
+				<h5>Makanan Khas Daerah Gorontalo</h5>
+				<!-- <div class="fakeimg" style="height: 200px;">Image</div> -->
+				<img class="mage" src="https://takaitu.id/wp-content/uploads/2019/01/PhotoGrid_1547090012685-e1547525162675.jpg" alt="ilabulo">
+				<p>Jika dilihat sekilas dari bentuk makanan yang satu ini, pasti sebagian orang akan mengira bahwa makanan ini adalah pepes. Bentuknya yang panjang serta teksturnya yang agak padat memang sekilas menyerupai pepes. Dan satu lagi yang membuat makanan ini sangat serupa dengan pepes, adalah bungkus dari makanan tersebut yang menggunakan daun pisang. Serupa tapi tak sama, walaupun nampak sama dari penampilan luar, namun sangat berbeda jika kita telah mengetahui isinya. Ilabulo jelas sangat berbeda dengan pepes-pepes lainnya yang biasa dijumpai di Jawa Barat.Ilabulo terbuat dari campuran sagu yang telah diberi bumbu-bumbu istimewa serta tambahan jeroan daging dan telur ayam sebagai isi dari makanan yang satu ini. Teksturnya sedikit kenyal, dengan sedikit rasa pedas yang menambah sedap rasa Ilabulo. Beberapa masyarakat di Indonesia, terutama di wilayah Indonesia bagian tengah dan timur memang menjadikan sagu sebagai salah satu pilihan panganan utama mereka. Ilabulo hadir dengan memberikan warna lain dari kuliner yang berbahan dasar sagu. Balutan daun pisang yang digunakan untuk membungkus adonan Ilabulo bukan hanya sekedar pembungkus, melainkan penambah aroma pada camilan satu ini. Terdapat dua proses penyajian berbeda yang biasa ditemukan, yakni bisa dikukus dan juga dibakar. Tak usah meragukan rasa dari keduanya, dijamin keduanya masih memiliki rasa yang istimewa walaupun diproses dengan cara yang berbeda.</p>
+			</div>
+			<div class="card">
+				<h2>SONGKOLO BAGADANG</h2>
+				<h5>Makanan Khas Daerah Makassar</h5>
+				<!-- <div class="fakeimg" style="height: 200px;">Image</div> -->
+				<img class="mage" src="http://etnis.id/content/images/2020/01/songkolo.jpg" alt="songkolo">
+				<p>Selain kaya budaya dan destinasi wisata, Sulawesi Selatan juga memiliki beraneka ragam kuliner yang khas dan mampu memanjakan lidah dengan harga bersahabat. Salah satu kuliner yang selalu mampu menjadi pilihan saat lapar adalah songkolo bagadang. Songkolo adalah salah satu makanan khas di Sulsel. Dinamakan songkolo karena berasal dari kata ‘sokko’ yang berarti nasi ketan. Ya, songkolo adalah olahan dari beras ketan. Sedangkan sematan kata bagadang atau begadang ditambahkan, karena makanan ini kerap dijumpai hingga larut malam. Apalagi di kota-kota besar di Sulawesi, kuliner ini akan dengan sangat mudah ditemukan di malam hari. Harganya pun ramah di kantong. Menu ini termasuk dalam jenis makanan berat. Karena terbuat dari bahan utama beras ketan putih atau hitam. Beras ketan ini dimasak bersama dengan sari kelapa atau ‘santan’. Itulah yang membuat rasa sokko menjadi gurih dan legit..</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>About Me</h2>
+				<!-- <div class="fakeimg" style="height: 100px;">Image</div> -->
+				<img class="mage" src="rafichibi.png" alt="">
+				<p>Muhammad Rafi Valliansyah <br> 2003117 </p>
+
+			</div>
+			<div class="card">
+				<h3>Popular Post</h3>
+				<div class="fakeimg1"></div>
+				<div class="fakeimg2"></div>
+				<div class="fakeimg3"></div>
+			</div>
+			<div class="card">
+				<h3>Follow me</h3>
+				<p>IG : rafivalli261</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<h4>Mata Kuliah Pemrograman Internet 2021 KOM-3A</h4>
+	</div>
+</body>
+</html>

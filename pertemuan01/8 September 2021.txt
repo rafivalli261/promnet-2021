@@ -1,0 +1,88 @@
+Pemrograman Internet
+
+Pendahuluan
+
+Aplikasi website -> sebagai alat untuk mengirimkan dokumen , awalnya
+hampir semua aplikasi berbasis web
+aplikasi lebih mudah digunakan
+
+aplikasi berbasiswab
+menawarkan kauntungna seperti
+akses instan
+penginaktanotomatis 
+peluang kolaborasi dalam skala besar
+
+
+pengalaman membuat aplikasi web
+HTML
+CSS
+Javascript
+Jaringan Protokol
+Grafik Interaktif
+Basis Sata
+
+wajib 80% 12 pert wajib
+pakaian sopan
+
+tugas 20
+uts 40 -> mini proyek
+kelompok?
+uas 40
+A -> UPI
+
+pert 1
+01 pengenalan html dasar
+02 html form
+03 dasar css
+04 javascrips dom
+05 jquery ajax json
+06 php dasar, php dan mysql(crud)
+07 pengerjaan proyek uts
+08 uts
+09 php lanjutan
+10 bootstrap
+11 penggunaan framework dan konsep mvc
+12 web security
+13 large scale application
+14-15 pengerjaan proyek
+16 presentasi preject (UAS)
+
+tugas hanya projek
+sedikit perhari ada quiz
+tidak ada ujian tertulis
+
+kelompok
+2 orang uts
+
+internet website
+client server
+web technologies
+tools dalam pemrograman internet
+dasar html
+
+Apa itu internet?
+apa itu website?
+
+full stack front - back
+
+rapid chages
+
+
+=====================
+html 5
+<!DOCTYPE html>
+<head>
+<img src="" alt="" width="" height="">
+
+
+
+</head>
+</html>
+
+buatlah halaman cv / biodata mengguankan html 5
+ada gambar
+ada link
+style
+no css
+
+Nama saya Muhammad Rafi Valliansyah, biasa dipanggil Rafi. Saya tinggal di Desa Jatidowo, Kecamatan Rejotangan, Kabupaten Tulungagung, Provinsi Jawa Timur. Kegiatan yang saya sukai kurang lebih seperti membaca buku, bermain gim, belajar pemrograman, dll. Terkadang saya juga belajar desain grafis dari video yang saya tonton di kanal youtube. Saya kurang suka dengan acara bepergian apalagi jika harus pergi sendiri ke suatu tempat, tetapi jika memang ada perlu saya tetap pergi. Suatu hari nanti saya berkeinginan untuk menjadi seorang dosen dengan bidang keahlian sesuai dengan jurusan saya saat ini, kemudian hidup mulia dan bahagia bersama keluarga saya.

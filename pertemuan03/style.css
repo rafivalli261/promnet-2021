@@ -1,0 +1,108 @@
+/*p {
+	text-indent: 40px;
+	letter-spacing: 1px;
+	font: 20px Cambria, sans-serif;
+	text-align: justify;
+	text-transform: capitalize;
+	text-shadow: 3px -3px 5px blue;
+}
+*/
+.judul1{
+	color: lightsalmon;
+	font-family: Cambria, sans-serif;
+	background-color: antiquewhite;
+	display: inline-block;
+	padding: 2px;
+}
+
+li {
+	font-size: 14px;
+}
+
+ol{
+	background: #ff9999;
+	padding: 20px;
+}
+
+ul{
+	background: #3399ff;
+	padding: 20px;
+}
+
+ol li{
+	background-color: #ffe5e5;
+	padding: 5px;
+	margin-left: 35px;
+}
+
+ul li{
+	background-color: #cce5ef;
+	margin: 5px;
+}
+
+body{
+	background-image: url(https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1515557737/asxtrr2ga1os4abfmuoe.jpg);
+	background-repeat: repeat;
+}
+/*link, visited, hover, active*/
+.link{
+	padding: 10px;
+	background-color: whitesmoke;
+	margin: 10px auto;
+	width: 300px;
+	font-size: 20px;
+	border: 2px solid lightskyblue;
+	border-radius: 20px;
+	box-shadow: 3px 3px 6px 2px grey;
+}
+.one:link{
+	color: #ff0000;
+}
+.one:visited{
+	color: #0000ff;
+}
+.one:hover{
+	background-color: #ffcc00;
+}
+
+.two:link{
+	color: #ff0000;
+}
+.two:visited{
+	color: #0000ff;
+}
+.two:hover{
+	font-size: 150%;
+}
+
+.three:link{
+	color: #ff0000;
+}
+.three:visited{
+	color: #0000ff;
+}
+.three:hover{
+	color: #66ff66;
+}
+
+.four:link{
+	color: #ff0000;
+}
+.four:visited{
+	color: #0000ff;
+}
+.four:hover{
+	font-family: monospace;
+}
+
+.five:link{
+	color: #ff0000;
+	text-decoration: none;
+}
+.five:visited{
+	color: #0000ff;
+	text-decoration: none;
+}
+.five:hover{
+	text-decoration: underline;
+}

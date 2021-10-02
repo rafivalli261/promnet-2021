@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Judul Halaman -->
+		<title>Tugas 3 - Muhammad Rafi Valliansyah</title>
+		<!-- Jenis Font yang digunakan -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+	</head>
+	<body style="background-color: #eaeaea">
+		<div style="width: 800px; margin: 20px auto; font-family: 'Varela Round', sans-serif; background-color: snow; box-shadow: 3px 3px 6px 2px grey; border-radius: 20px">
+			<!-- Jumbotron Awal -->
+			<div style=" background-image: url(https://img.freepik.com/free-photo/businessman-using-tech-devices-icons-thin-line-interface_117023-904.jpg?size=626&ext=jpg); height: 200px; background-size: cover; background-position: 0 -40px; border-top: 5px solid lightcyan; border-bottom: 5px solid lightskyblue; border-radius: 15px 15px 0 0; "> </div>
+			<!-- Jumbotron Akhir -->
+			<!-- Judul -->
+			<h2 style="margin-top: 20px; text-align: center">Formulir Keperluan Sekolah</h2>
+			<!-- Akhir Judul -->
+			<form style="padding: 20px; box-sizing: border-box">
+				<!-- Biodata awal -->
+				<fieldset style="margin: 20px 0">
+					<legend>Biodata</legend>
+					<table cellpadding="3px">
+						<tr>
+							<td><label for="nuama">Nama : </label></td>
+							<td><input type="text" id="nuama" required /></td>
+						</tr>
+						<tr>
+							<td><label for="usrname">Username : </label></td>
+							<td><input type="text" id="usrname" name="usrname" /></td>
+						</tr>
+						<tr>
+							<td><label for="Password">Password : </label></td>
+							<td><input type="password" id="Password" name="Password" /></td>
+						</tr>
+						<tr>
+							<td><label for="kelamin">Jenis Kelamin : </label></td>
+							<td>
+								<input type="radio" id="laki" name="kel" />
+								<label for="laki">Laki-Laki</label>
+								<br />
+								<input type="radio" id="perem" name="kel" />
+								<label for="perem">Perempuan </label>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="tglhr">Tanggal Lahir : </label></td>
+							<td><input type="date" id="tglhr" name="tglhr" /></td>
+						</tr>
+						<tr>
+							<td><label for="alamat">Alamat : </label></td>
+							<td><textarea id="alamat" cols="20" rows="7" name="alamat"></textarea></td>
+						</tr>
+						<tr>
+							<td><label for="email">Email : </label></td>
+							<td><input type="email" id="email" name="email" /></td>
+						</tr>
+						<tr>
+							<td><label for="HP">No HP : </label></td>
+							<td><input type="text" id="HP" name="HP" /></td>
+						</tr>
+						<tr>
+							<td><label for="agama">Agama : </label></td>
+							<td>
+								<select name="agama" id="agama">
+									<option value="islam">Islam</option>
+									<br />
+									<option value="kristen">Kristen</option>
+									<br />
+									<option value="buddha">Buddha</option>
+									<br />
+									<option value="hindu">Hindu</option>
+									<br />
+									<option value="judaisme">Judaisme</option>
+									<br />
+									<option value="jainisme">Jainisme</option>
+									<br />
+									<option value="bahai">Baha'i</option>
+									<br />
+									<option value="sikhisme">Shikisme</option>
+									<br />
+									<option value="zeroastrinisme">Zoroastrinisme</option>
+									<br />
+									<option value="konfusianisme">Konfusianisme</option>
+									<br />
+									<option value="shinto">Shinto</option>
+									<br />
+									<option value="taoisme">Taoisme</option>
+									<br />
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="pasfoto">Pas Foto 3x4 : </label></td>
+							<td><input type="file" id="pasfoto" name="pasfoto" /></td>
+						</tr>
+					</table>
+				</fieldset>
+				<!-- biodata akhir -->
+
+				<fieldset style="margin: 20px 0">
+					<legend>Pendidikan</legend>
+					<table>
+						<tr>
+							<td><label for="ASL">Asal Sekolah : </label></td>
+							<td><input type="text" id="ASL" /></td>
+						</tr>
+						<tr>
+							<td><label for="nilai">Nilai Ujian Sekolah : </label></td>
+							<td><input type="text" id="nilai" /></td>
+						</tr>
+						<tr>
+							<td><label for="ahli">Bidang yang diminati : </label></td>
+							<td>
+								<input type="checkbox" id="webdev" />
+								<label for="webdev">Web Dev</label><br />
+								<input type="checkbox" id="ml" />
+								<label for="ml">Machine Learning</label><br />
+								<input type="checkbox" id="dtsci" />
+								<label for="dtsci">Data Scientist</label><br />
+								<input type="checkbox" id="security" />
+								<label for="security">Security Admin</label><br />
+								<input type="checkbox" id="ui/ux" />
+								<label for="ui/ux">UI/UX Designer</label><br />
+								<input type="checkbox" id="hacker" />
+								<label for="hacker">Hacker</label><br />
+								<input type="checkbox" id="netarc" />
+								<label for="netarc">Network Arcitect</label><br />
+								<input type="checkbox" id="engine" />
+								<label for="engine">Hardware Engineer</label><br />
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<fieldset>
+					<legend>Orang Tua</legend>
+					<table>
+						<tr>
+							<td><label for="ayah">Nama Ayah : </label></td>
+							<td><input type="text" id="ayah" /></td>
+						</tr>
+						<tr>							<td><label for="ibu">Nama Ibu : </label></td>
+							<td><input type="text" id="ibu" /></td>
+						</tr>
+						<tr>
+							<td><label for="alamat_ort">Alamat Orang Tua : </label></td>
+							<td><textarea id="alamat_ort" cols="20" rows="7"></textarea></td>
+						</tr>
+						<tr>
+							<td><label for="kk">Upload Kartu Keluarga : </label></td>
+							<td><input type="file" id="kk" name="kk" required /></td>
+						</tr>
+					</table>
+				</fieldset>
+				<input type="submit" name="kumpulkan" value="GASS" style="margin: 20px; padding: 10px; font-family: 'Varela Round', sans-serif; background-color: snow; box-shadow: 2px 2px 4px 1px grey; border-radius: 16px; font-size: 20px" />
+			</form>
+		</div>
+	</body>
+</html>
