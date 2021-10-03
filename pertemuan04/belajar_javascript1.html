@@ -10,6 +10,19 @@
 				document.getElementById("pemo").innerHTML = "Paragraph changed.";
 			}
 		</script>
+		<style>
+			button {
+				padding: 10px;
+				font-size: medium;
+				margin: 2px;
+			}
+			#hasil {
+				border: 2px solid magenta;
+				font-size: large;
+				width: 500px;
+				font-family: "Courier New", Courier, monospace;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- entah kenapa ID tidak suka S -->
@@ -32,22 +45,43 @@
 		<div class="maraton">
 			<label for="angka1">Masukkan Angka 1 :</label>
 			<input id="angka1" /><br />
-			<label for="angka2">Masukkan Angka 1 :</label>
+			<label for="angka2">Masukkan Angka 2 :</label>
 			<input id="angka2" /><br />
-			<button onclick="pertambahan()">gass</button>
+			<button onclick="pertambahan()">+</button>
+			<button onclick="pengurangan()">-</button>
+			<button onclick="perkalian()">x</button>
+			<button onclick="pembagian()">:</button>
 			<h4 id="hasil"></h4>
 		</div>
 		<div class="coba3">
 			<p id="krons"></p>
 			<script>
-				let x = 6;
-				var b = 8;
-				document.getElementById("krons").innerHTML = x;
+				// let x = 6;
+				// var b = 8;
+				// document.getElementById("krons").innerHTML = x;
 				function pertambahan() {
 					let a = document.getElementById("angka1").value;
 					let b = document.getElementById("angka2").value;
 					var jumlah = parseInt(angka1.value) + parseInt(angka2.value);
-					document.getElementById("hasil").innerHTML = "Hasil = " + parseInt(jumlah);
+					document.getElementById("hasil").innerHTML = "Hasil Penambahan = " + parseInt(jumlah);
+				}
+				function pengurangan() {
+					let a = document.getElementById("angka1").value;
+					let b = document.getElementById("angka2").value;
+					var jumlah = parseInt(angka1.value) - parseInt(angka2.value);
+					document.getElementById("hasil").innerHTML = "Hasil Pengurangan = " + parseInt(jumlah);
+				}
+				function perkalian() {
+					let a = document.getElementById("angka1").value;
+					let b = document.getElementById("angka2").value;
+					var jumlah = parseInt(angka1.value) * parseInt(angka2.value);
+					document.getElementById("hasil").innerHTML = "Hasil Perkalian = " + parseInt(jumlah);
+				}
+				function pembagian() {
+					let a = document.getElementById("angka1").value;
+					let b = document.getElementById("angka2").value;
+					var jumlah = parseFloat(angka1.value) / parseFloat(angka2.value);
+					document.getElementById("hasil").innerHTML = "Hasil Pembagian = " + parseFloat(jumlah);
 				}
 			</script>
 		</div>
