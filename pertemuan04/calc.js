@@ -1,8 +1,12 @@
-function insert(num) {
-	document.form.hasil.value = document.form.hasil.value + num;
+function input(num) {
+	if (num === "/" || num === "+" || num === "-" || num === "*") {
+		document.form.hasil.value = document.form.hasil.value + " " + num + " ";
+	} else {
+		document.form.hasil.value = document.form.hasil.value + num;
+	}
 }
 
-function equal() {
+function samadengan() {
 	const exp = document.form.hasil.value;
 	if (exp) {
 		document.form.hasil.value = eval(exp);
