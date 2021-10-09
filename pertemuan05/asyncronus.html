@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Belajar Asysnchronus Javascript</title>
+		<style>
+			.warna{
+				font-size: 36px;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				padding: 20px;
+				width: 200px;
+				margin: 20px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Hello, World!</h1>
+		<p>Asynchronus Javascript <br />Callback <br />Promise <br />Ajax <br />Async & Await</p>
+		<!-- apa itu javascript?  bahasa pemrograman tingkat tinggi dan dinamis yang secara umum dapat berjalan pada browser-->
+		<p>Javascript is a <b>single-threaded</b>, <b>non-blocking</b>, <b>asynchronus</b> and <b>concurrent</b> language</p>
+		<h3>Tread</h3>
+		<p>Urutan eksekusi kode yang dapat dilakukan secara bebas / independen satu sama lain, artinya javascript hanya mampu melakukan satu hal pada satu waktu tertentu -> single thread, kalo multi nanti dibagi bagi</p>
+		<h3>Blocking</h3>
+		<p>Jika task 1 belum selesai maka task 2 tidak dieksekusi | non-blocking bisa tetap menjalankan task 2 walaupun task 1 belum selesai</p>
+		<h3>Synchronus</h3>
+		<p>biasa, normal flow | Asynchronus -> walaupun task 1 belum selesai bisa pindah ke task 2</p>
+		<p>asynchronus + single-threaded = <b>Concurrency</b></p>
+		<p>asynchronus + multi-threaded = <b>Parallelism</b></p>
+        <p>Kesimpulan : <br> 
+            <ul>
+                <li>singgle vs multi thread <br>lingkugnan eksekusi task</li>
+                <li>blocking vs non-blocking <br>teknik 'ngoding' (IO related)</li>
+                <li>Synchronus vs Asynchronus <br>teknik 'ngoding' (HTTP Request related)</li>
+                <li>Concurrency vs Parallelism <br>lingkugnan eksekusi task</li>
+            </ul> 
+        </p>
+        <br>
+        <br>
+        <br>
+        <div class="warna">Perhatikan Baik-Baik!</div>
+		<button id="mulai">Mulai</button>
+		<button id="berhenti">Berhenti</button>
+		<script src="jquery.js"></script>
+        <script src="asinkronus.js"></script>
+	</body>
+</html>
