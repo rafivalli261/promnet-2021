@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$("h1").css("background-color", "salmon");
-	$("h2, p").css("font-family", "Halvetica, sans-serif");
+	$("h2, p").css("font-family", "'Source Code Pro', sans-serif");
 	$("#p2").hide();
 	$("#btn1").click(function () {
 		//$("p").hide("slow"); //menyembunyikan elemen, parameter berfungsi sebagai waktu untuk melakukan aksi, dalam milisekon, bisa juga string slow , fast
