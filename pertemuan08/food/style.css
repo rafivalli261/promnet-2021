@@ -1,0 +1,103 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Catamaran", sans-serif;
+	overflow: hidden;
+}
+
+nav {
+	position: relative;
+	display: flex;
+	background-color: #53db6e;
+	justify-content: space-around;
+	/* padding: 20px 0; */
+	height: 50px;
+	color: #db53c0;
+	align-items: center;
+}
+/* #53db6e utama */
+/* #db53c0 balik */
+nav ul {
+	display: flex;
+	list-style: none;
+	width: 40%;
+	justify-content: space-between;
+}
+
+nav .logo {
+	font-family: "Courgette", cursive;
+	font-size: 1.02rem;
+	letter-spacing: 3px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #db53c0;
+	font-family: "Catamaran", sans-serif;
+}
+
+nav ul li a:hover {
+	color: #db7dc8;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.menu-toggle span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: #db53c0;
+	border-radius: 3px;
+}
+
+/* Hambrueger Menu Animation */
+/* .menu-toggle span:first-child {
+} */
+
+/* Responsif Brekpoints*/
+
+/* ukuran tablet */
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		width: 50%;
+	}
+}
+
+/* ukuran mobile */
+
+@media screen and (max-width: 576px) {
+	.menu-toggle {
+		display: flex;
+	}
+	nav ul {
+		position: absolute;
+		right: 0;
+		top: 0;
+		flex-grow: 1;
+		height: 100vh;
+		justify-content: space-evenly;
+		flex-direction: column;
+		background-color: #53db6e;
+		align-items: center;
+		z-index: -1;
+		transform: translateX(100%);
+		transition: all 1s;
+		opacity: 0;
+	}
+
+	nav ul.slide {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
