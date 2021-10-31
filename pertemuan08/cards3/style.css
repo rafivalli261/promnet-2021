@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: rgb(27, 27, 27);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	background: wheat;
+	width: 270px;
+	margin: 10px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.card-image {
+	height: 150px;
+	margin-bottom: 15px;
+	background-size: cover;
+	/* border-radius: 15px 15px 0 0; */
+}
+
+.noelle-1 {
+	background-image: url(../food2/fraction/img/1.png);
+}
+.noelle-2 {
+	background-image: url(../food2/fraction/img/2.png);
+}
+.noelle-3 {
+	background-image: url(../food2/fraction/img/3.png);
+}
+
+.card h2 {
+	padding: 10px;
+}
+
+.card p {
+	padding: 10px;
+}
+
+.card a {
+	background-color: thistle;
+	color: tomato;
+	padding: 15px 20px;
+	display: block;
+	text-align: center;
+	margin: 20px 50px;
+	text-decoration: none;
+}
+
+.card:hover {
+	background-color: rgb(62, 62, 62);
+	color: salmon;
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 1s ease;
+}

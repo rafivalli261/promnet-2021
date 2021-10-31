@@ -16,6 +16,10 @@ a {
 	text-decoration: none;
 }
 
+section {
+	padding-top: 4rem;
+}
+
 /* Nav Start */
 
 .header {
@@ -109,46 +113,6 @@ a {
 	/* height: 512px; */
 }
 
-/* css for manual slide navigation */
-.navigation-manual {
-	position: absolute;
-	width: 80%;
-	margin-top: -7%;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-end;
-}
-
-.manual-btn {
-	display: none;
-	border: 2px solid #482ff7;
-	padding: 5px;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: 1s;
-}
-
-/* .manual-btn:not(:last-child) {
-	margin-right: 40px;
-} */
-
-.manual-btn:hover {
-	background: #482ff7;
-}
-
-#radio1:checked ~ .first {
-	margin-left: 0;
-}
-#radio2:checked ~ .first {
-	margin-left: -20%;
-}
-#radio3:checked ~ .first {
-	margin-left: -40%;
-}
-#radio4:checked ~ .first {
-	margin-left: -60%;
-}
-
 /* css for automatic navigator */
 
 .navigation-auto {
@@ -232,22 +196,147 @@ a {
 /* Hero End */
 
 /* Dish Start */
-#dishes {
-	display: flex;
-	justify-content: center;
-}
+
 .container-tiga {
-	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3rem 0;
+}
+
+.container-tiga .row-1 p {
+	font-size: 3rem;
+	font-weight: bold;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.container-tiga .row-2 {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
-.container-tiga .row-2 .makan {
-	width: 20px;
-	height: 10px;
-	background-color: seagreen;
-	padding: 50px;
+
+.card {
+	background: wheat;
+	width: 300px;
+	margin: 10px;
+	border-radius: 15px;
+	overflow: hidden;
+	text-align: center;
 }
+
+.card-image {
+	height: 150px;
+	margin-bottom: 15px;
+	background-size: cover;
+	/* border-radius: 15px 15px 0 0; */
+}
+
+.card-image img {
+	width: 100%;
+}
+
+.noelle-1 {
+	background-image: url(../food2/fraction/img/1.png);
+}
+.noelle-2 {
+	background-image: url(../food2/fraction/img/2.png);
+}
+.noelle-3 {
+	background-image: url(../food2/fraction/img/3.png);
+}
+
+.card h2 {
+	padding: 10px;
+	font-size: 2.7rem;
+}
+
+.card p {
+	padding: 10px;
+	font-size: 2rem;
+}
+
+.card:hover {
+	background-color: rgb(62, 62, 62);
+	color: salmon;
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 1s ease;
+}
+
 /* Dish End */
+
+/* Order Start */
+
+#order {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.container-empat {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container-empat .row-1 {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+	padding-bottom: 2rem;
+}
+.container-empat .row-2 {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	flex-wrap: wrap;
+	font-size: 2rem;
+}
+
+.container-empat .row-2 .col-1 p {
+	color: white;
+	background-color: green;
+	padding: 1.5rem;
+	text-align: center;
+	margin: 2rem;
+	border-radius: 1rem;
+}
+
+.container-empat .row-2 .col-2 p {
+	color: white;
+	background-color: magenta;
+	padding: 1.5rem;
+	text-align: center;
+	margin: 2rem;
+	border-radius: 1rem;
+}
+
+.container-empat .row-2 .col-1 p:hover {
+	background-color: greenyellow;
+	color: rgb(138, 167, 134);
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 1s ease;
+}
+.container-empat .row-2 .col-2 p:hover {
+	background-color: rgb(233, 185, 243);
+	color: rgb(121, 109, 109);
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 1s ease;
+}
+
+/* Order End */
+
+/* Footer */
+
+footer p {
+	text-align: center;
+	font-size: 2rem;
+	padding: 1rem;
+	margin: 2rem 0;
+}
+
+/* Footer End */
 
 /* Responsive */
 
