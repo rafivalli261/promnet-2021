@@ -7,6 +7,7 @@
 html {
 	font-size: 62.5%;
 	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
 }
 li {
 	list-style: none;
@@ -113,6 +114,46 @@ section {
 	/* height: 512px; */
 }
 
+/* css for manual slide navigation */
+.navigation-manual {
+	position: absolute;
+	width: 80%;
+	margin-top: -7%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+
+.manual-btn {
+	display: none;
+	border: 2px solid #482ff7;
+	padding: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 1s;
+}
+
+/* .manual-btn:not(:last-child) {
+	margin-right: 40px;
+} */
+
+.manual-btn:hover {
+	background: #482ff7;
+}
+
+#radio1:checked ~ .first {
+	margin-left: 0;
+}
+#radio2:checked ~ .first {
+	margin-left: -20%;
+}
+#radio3:checked ~ .first {
+	margin-left: -40%;
+}
+#radio4:checked ~ .first {
+	margin-left: -60%;
+}
+
 /* css for automatic navigator */
 
 .navigation-auto {
@@ -201,7 +242,6 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 3rem 0;
 }
 
 .container-tiga .row-1 p {
